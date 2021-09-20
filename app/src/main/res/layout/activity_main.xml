@@ -17,7 +17,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             tools:ignore="ContentDescription"
-            tools:src="@tools:sample/avatars"/>
+            android:src="@android:drawable/ic_menu_camera"/>
 
         <EditText
             android:id="@+id/hero_name_edit"
@@ -68,6 +68,7 @@
             tools:ignore="Autofill,LabelFor,TextFields"/>
 
         <TextView
+            android:id="@+id/pow_ee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -77,5 +78,21 @@
             android:textSize="20sp"
             android:text="@string/power_string"
             tools:ignore="HardcodedText" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pow_ee"
+            android:progressTint="@color/yellow"
+            android:layout_centerHorizontal="true"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_string"
+            android:layout_alignParentBottom="true"
+            />
+
     </RelativeLayout>
 </layout>
